@@ -1,0 +1,46 @@
+<div class="dash-content">
+   
+    <div class="activity">
+        <div class="title">
+          <span class="text">All the Patients List</span>
+        </div>
+        
+        <div class="table-responsive">
+          <table id="zebra-h" class="table table-striped table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th>No.</th>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>DOB</th>
+                <th>Gender</th>
+                <th>Phone</th>
+                <th>Address</th>
+                <th>Disease</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let patient of patientList; index as i">
+                <td>{{ i + 1 }}</td>
+                <td>{{ patient.patientId }}</td>
+                <td>{{ patient.patientName }}</td>
+                <td>{{ patient.patientEmail }}</td>
+                <td>{{ patient.patientDOB }}</td>
+                <td>{{ patient.patientGender }}</td>
+                <td>{{ patient.patientContact }}</td>
+                <td>{{ patient.patientAddress }}</td>
+                <td>{{ patient.patientDisease }}</td>
+                <td>
+                  <button type="button" class="btn btn-danger" (click)="deletePatients(patient.patientId)">
+                    Delete
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      
+</div>

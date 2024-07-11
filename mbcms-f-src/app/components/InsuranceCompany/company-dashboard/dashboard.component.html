@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <section>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="../../../../assets/2.png" height="60px" alt="MDB Logo" loading="lazy" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="list-group-item list-group-item-action py-2 ripple">
+            <span class="font-size"
+                  routerLink="add/plan/companyName">Add New Insurance Plan</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="list-group-item list-group-item-action py-2 ripple">
+                <span class="font-size" routerLink="getclaim/companyName">View
+                  Claims</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="list-group-item list-group-item-action py-2 ripple">
+                <span class="font-size" routerLink="update/claim">Update
+                  Claim</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="list-group-item list-group-item-action py-2 ripple">
+               <span class="font-size" routerLink="updatecompany">Update
+                  Company</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="list-group-item list-group-item-action py-2 ripple" (click)="logoutCompany()">
+                <i class="fa fa-sign-out me-3"></i><span class="font-size">Logout</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+   
+    <main style="margin-top: 58px;">
+      <div class="container pt-4">
+        <div class="card" style="width:100%">
+          <div class="card-body"> 
+        <div class="title">
+          <div class="element-with-background">
+         <!-- <img src="../../../../assets/companydashboard.png" height="90%" width="40px"> -->
+          <span class="text" style="font-size: 25px">   &nbsp; Welcome <b>{{companyName}}</b></span>
+        </div>
+        </div>
+
+        <router-outlet></router-outlet></div>
+        </div>
+
+      </div>
+    </main>
+    
+  </section>
+
+
+
+<br><br><br><br><br>
+  <!-- <footer class="copyright">
+    <p class="text"> CareAssist Medical:All rights reserved</p>
+  </footer> -->
+
+
+
+</body>
+
+</html>

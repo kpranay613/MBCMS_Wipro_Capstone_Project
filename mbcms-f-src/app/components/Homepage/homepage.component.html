@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0-beta3/css/bootstrap.min.css" rel="stylesheet">
+     <title>Black and White Theme</title>
+</head>
+
+<body>
+     <header>
+          <nav class="navbar navbar-expand-xl navbar-light bg-white w-75">
+               
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                         <li class="nav-item">
+                              <a class="navbar-brand" href="#">
+                                   <img src="../../../../assets/2.png" height="50px" alt="MDB Logo" loading="lazy" />
+                                 </a>
+                         </li>
+                         <li class="nav-item">
+                              <a class="nav-link" href="#services">Services</a>
+                         </li>
+                         <li class="nav-item">
+                              <a class="nav-link" href="#contact">Contact Us</a>
+                         </li>
+                         <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="registrationDropdown" role="button"
+                                   data-bs-toggle="dropdown" aria-expanded="false">
+                                   Registration
+                              </a>
+                              <ul class="dropdown-menu" aria-labelledby="registrationDropdown">
+                                   <li><a class="dropdown-item" routerLink="/registerpatient">Patient</a></li>
+                                   <li><a class="dropdown-item" routerLink="/registerprovider">Healthcare Provider</a>
+                                   </li>                                   
+                                   <li><a class="dropdown-item" routerLink="/registercompany">Insurance Company</a></li>
+                              </ul>
+                         </li>
+                         <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="loginDropdown" role="button"
+                                   data-bs-toggle="dropdown" aria-expanded="false">
+                                   Login
+                              </a>
+                              <ul class="dropdown-menu" aria-labelledby="loginDropdown">
+                                   <li><a class="dropdown-item" routerLink="/login/patient">Patients</a></li>
+                                   <li><a class="dropdown-item" routerLink="/login/provider">Healthcare Provider</a></li>
+                                   <li><a class="dropdown-item" routerLink="/login/company">Insurance Company</a></li>
+                                   
+                                   <li><a class="dropdown-item" routerLink="/login/admin">Admin</a></li>
+                              </ul>
+                         </li>
+                    </ul>
+               </div>
+          </nav>
+     </header>
+
+     <div class="row">
+          <div class="column">
+               <div class="bg-image">
+               <!-- <img src="../../../assets/stethoscope-clean-table-doctor-work-tool-generative-ai.jpg" alt="Snow" style="width:100%;"> -->
+               <h1 class="sampleheading text-center">Are You Coverd ?</h1>
+               </div>
+          </div>
+     </div>
+
+     <section class="bg-light py-5 py-xl-8" id="services">
+          <div class="container">
+               <div class="row justify-content-md-center">
+                    <div class="col-12 col-md-10 col-lg-8 col-xl-12 ">
+                         <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+                         <h3 class="fs-6 mb-2 text-secondary text-center text-uppercase">Our Services</h3>
+                         <h4 class="display-5 mb-5 text-center">Medical Billing & Claims Management</h4>
+                         <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+                         
+                         <div class="service">
+                           <h5 class="fs-5 text-center text-dark">Medical Billing</h5>
+                           <p class="text-center">We provide comprehensive medical billing services to ensure timely and accurate claims submission, improving revenue cycle management.</p>
+                         </div>
+                         <div class="service">
+                           <h5 class="fs-5 text-center text-dark">Claims Management</h5>
+                           <p class="text-center">Our service handles the entire claims process, ensuring you receive maximum reimbursements efficiently.</p>
+                         </div>
+                         <div class="service">
+                           <h5 class="fs-5 text-center text-dark">Patient Registration</h5>
+                           <p class="text-center">Streamlining patient registration to capture all necessary information accurately and efficiently.</p>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+     <footer id="contact" class="text-center mt-5">
+          <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+          <div class="contact-info">
+            <h5 class="fs-5 text-secondary text-uppercase mb-3">Contact Us</h5>
+            <p class="mb-1">Email: info@medicalbilling.com</p>
+            <p class="mb-1">Phone: 9123456789</p>
+            <p>Address: Kodathi, Benguluru, Karnataka</p>
+          </div>
+          <div class="about mt-4">
+            <p class="text">Medical Billing and Claims Management System</p>
+            <p class="text">Providing comprehensive solutions for healthcare providers to manage billing, claims, and patient data efficiently.</p>
+          </div>
+          <footer class="copyright mt-3">
+            <p class="text">© 2024 Medical Billing and Claims Management System. All rights reserved.</p>
+          </footer>
+        </footer>
+        
+
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0-beta3/js/bootstrap.min.js"></script>
+</body>
+
+</html>

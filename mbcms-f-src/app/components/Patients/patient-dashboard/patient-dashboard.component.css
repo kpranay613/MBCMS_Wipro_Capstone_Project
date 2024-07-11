@@ -1,0 +1,70 @@
+
+body {
+    
+    background-image: url(../../../../assets/Background.jpg);
+}
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+  max-height: 60px;
+}
+
+.nav-item {
+  margin-left: 15px;
+}
+
+.nav-item .list-group-item {
+  background-color: transparent;
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-item .list-group-item:hover {
+  background-color: #f8f9fa;
+  color: #007bff;
+}
+
+.nav-item .list-group-item .font-size {
+  font-size: 16px;
+  color: #000;
+}
+
+.nav-item .list-group-item .font-size:hover {
+  color: #007bff;
+}
+
+.nav-item .list-group-item .fa-sign-out {
+  margin-right: 5px;
+  color: #dc3545;
+}
+
+.navbar-toggler {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+@media (max-width: 992px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .nav-item {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .navbar-collapse {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 10px;
+  }
+}
